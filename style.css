@@ -1,13 +1,13 @@
 :root {
     --content-width: 79%;
     --block-height: 100vh;
+    --main-font: "Ubuntu";
 }
 
 body {
     padding: 0;
     margin: 0;
 }
-
 
 .header {
     height: 100vh;
@@ -23,19 +23,16 @@ body {
     background-color: white;
 }
 
-.navigation__menu{
+.navigation__menu {
     padding: 0;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
 }
 
-
-
-
 .navigation__menu-item {
     padding: 0 41px;
-    font-family: Ubuntu;
+    font-family: var(--main-font);
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -48,10 +45,91 @@ body {
     color: #131313;
 }
 
+.navigation__menu-link:hover {
+    color: #C19551;
+}
+
+.navigation__cart-amount {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    text-align: center;
+    top: -5px;
+    left: -5px;
+    background: #C19551;
+    color: white;
+    border-radius: 100%;
+    font-family: var(--main-font);
+}
+
+.navigation__cart {
+    position: relative;
+}
+
 .header__content {
     width: 100%;
     height: 90vh;
     background-image: url("./img/bgsuffix.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: ce;
+    color: white;
+
+}
+
+.header__content-wrapper {
+    width: var(--content-width);
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.header__content-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 146px;
+}
+
+.header__content-header {
+    width: 404px;
+    line-height: 66px;
+    font-family: var(--main-font);
+    font-weight: normal;
+    font-size: 46px;
+}
+
+.header__content-subheader {
+    font: 24px var(--main-font);
+    line-height: 36px;
+    width: 488px;
+    font-weight: lighter;
+}
+
+
+
+.header__button {
+    width: 270px;
+    height: 60px;
+    background: linear-gradient(90.92deg, #9F6023 8%, #E4CC80 93.74%);
+    border-radius: 5px;
+    border: transparent;
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.header__image-container{
+    position: relative;
+    display: flex;
+    width: 50%;
+}
+
+.header__image{
+    position: absolute;
+    bottom: 0;
+    width: 90%;
 }
