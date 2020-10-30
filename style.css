@@ -75,7 +75,6 @@ body {
     background-size: cover;
     background-position: ce;
     color: white;
-
 }
 
 .header__content-wrapper {
@@ -91,7 +90,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
 
 .header__content-header {
@@ -109,8 +107,6 @@ body {
     font-weight: lighter;
 }
 
-
-
 .header__button {
     width: 270px;
     height: 60px;
@@ -124,21 +120,101 @@ body {
     line-height: 36px;
 }
 
-.header__image-container{
+.header__image-container {
     display: flex;
     align-items: flex-end;
     width: 752px;
     height: 100%;
 }
 
-.header__image{
+.header__image {
     width: 100%;
     height: 602px;
 }
 
 .features {
+    height: 100vh;
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
+    margin: auto;
     width: var(--content-width);
     align-items: center;
+}
+
+.features__text-container{
+    align-items: center;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features__label{
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 36px;
+    color: #a0a0a0;
+    margin: 0%;
+    text-transform: uppercase;
+    
+}
+
+.features__header{
+    font-family: var(--main-font);
+    font-size: 38px;
+    line-height: 66px;
+    margin: 0%;
+}
+
+.features__feature-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
+}
+
+.feature{
+    width: 256px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+.feature__icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    background: linear-gradient(144.58deg, #9F6023 11.71%, #E8D185 83.71%);
+}
+
+.feature__label {
+    padding-top: 20px;
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0;
+}
+
+.feature__description {
+    padding-top: 10px;
+    font-family: var(--main-font);
+    font-weight: 300;
+    font-size: 18px;
+    ;line-height: 26px;
+    margin: 0;
+}
+
+.feature__label_with-socker-ball {
+    width: 204px;
+}
+
+.feature__label_with-money-bag {
+    width: 103px;
 }
