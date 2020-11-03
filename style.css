@@ -361,3 +361,56 @@ body {
     color: #858585;
     margin: auto;
 }
+
+.check-screens{
+    background: url("./img/screens-bg.png");
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.check-screens__wrapper {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: var(--content-width);
+    margin: auto;
+}
+
+.check-screens__text-container {
+    width: 60%;
+    margin: auto;
+    align-items: center;
+}
+
+.check-screens__text-heading {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0;
+
+    color: #BC8E4A;
+}
+
+.check-screens__text-description {
+    font-family: var(--main-font);
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #E8E9E8
+}
+
+.check-screens__button{
+    font-family: var(--main-font);
+    line-height: 36px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px 23px;
+    text-transform: uppercase;
+    background: linear-gradient(90.92deg, #9F6023 8%, #E4CC80 93.74%);
+    border-radius: 5px;
+}
