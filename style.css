@@ -7,6 +7,7 @@
 body {
     padding: 0;
     margin: 0;
+    background: #E5E5E5;
 }
 
 .header {
@@ -133,7 +134,7 @@ body {
 }
 
 .features {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -217,4 +218,146 @@ body {
 
 .feature__label_with-money-bag {
     width: 103px;
+}
+
+.recommendations{
+    height: 70vh
+}
+
+.recommendations__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: var(--content-width);
+    margin: auto;
+    height: 100%;
+}
+
+
+.recommendations__label{
+    width: 306px;
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #a0a0a0;
+    margin: auto;
+}
+
+.recommendations__header{
+    font-family: var(--main-font);
+    font-size: 38px;
+    line-height: 66px;
+    text-align: center;
+    color: #131313;
+    margin: auto;
+}
+
+.recommendations__content-container {
+    display: flex;
+    align-items: center;
+}
+
+.selling-text{
+    padding-right: 32px;
+}
+
+.selling-text__header{
+    margin: auto;
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #BC8E4A;
+}
+
+.selling-text__description {
+    font-family: var(--main-font);
+    width: 540px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    color: #131313;
+    margin: auto
+}
+
+.recommendation-card {
+    padding-top: 50px; 
+    width: 536px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0px 0px 40px rgba(31, 38, 46, 0.05);
+    border-radius: 11px;
+}
+
+.recommendation-card__text{
+    font-family: var(--main-font);
+    width: 416px;
+    margin: auto;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #131313
+}
+
+.recommendation-card__slider-indicator-container {
+    display: flex;
+    justify-content: space-between;
+    width: 88px;
+    padding-top: 19px;
+    padding-bottom: 30px;
+}
+
+.recommendation-card__slider-indicator-active {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #C69D58;
+}
+
+.recommendation-card__slider-indicator-inactive{
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #E8E9E8;
+}
+
+.recommendation-card__person-container{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 24px;
+}
+
+.recommendation-card__img{
+    width: 100px;
+    height: 100px;
+}
+
+.recommendation-card__person-data-container {
+    padding-left: 13px;
+}
+
+.recommendation-card__person-name{
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #131313;
+    margin: auto;
+}
+
+.recommendation-card__person-description {
+    font-family: var(--main-font);
+    width: 325px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #858585;
+    margin: auto;
 }
